@@ -1,0 +1,287 @@
+body{
+  margin: 0;
+    background-color: #f4eeff;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+.h4
+{
+  text-align:left;
+}
+.header{
+  background-color: white;
+}
+.header p{
+  color: #686d76;
+}
+.para p{
+  color: #686d76;
+}
+.Activities_txt p{
+    color: #686d76;
+}
+.sales{
+  position: relative;
+  display: inline-block;
+  width: 10%;
+  float: left;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.sales_one{
+  position: relative;
+  display: inline-block;
+    width: 30%;
+    font-size: 20px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+}
+.txt_color{
+color: #79d70f;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+  margin: 15px;
+}
+.grid-container_one > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 30px;
+  background-color: white;
+  height:120px;
+}
+.grid-container_two {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+  margin: 15px;
+}
+.grid-container_two > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 30px;
+  background-color: white;
+  height: 330px;
+}
+.grid-container_three {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+  margin: 15px;
+}
+.grid-container_three > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 30px;
+  background-color: white;
+  height: 300px;
+}
+.event{
+  position:relative;
+    display: inline-block;
+    float: left;
+    width:40%;
+
+}
+.fullevent{
+  font-size: 10px;
+  text-align: left;
+}
+.event_button
+{
+  float: right;
+}
+.event_header
+{
+  float: left;
+}
+.members p{
+  text-align: center;
+}
+
+.calendar{
+  width: 300px;
+  position: relative;
+  display: inline-block;
+  height:auto;
+  background:#fff;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  margin-bottom: 20px;
+
+}
+.calendar .date{
+  padding:20px;
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(25px,1fr));
+  grid-gap: 10px;
+
+  box-sizing: border-box;
+}
+.calendar .date div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:22px;
+  color: #262626;
+}
+.calendar .date div.day{
+  font-weight: 700;
+}
+.calendar .date div.day:first-child,.calendar .date div.number:nth-child(7n + 1){
+  color:#ff685d;
+}
+.calendar .date div.number.active,
+.calendar .date div.number:hover
+{
+  background: #009688;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+img{
+  width: 60px;
+}
+.image{
+  float: left;
+  width: 20%;
+  margin-right: 30px;
+}
+
+.container {
+  width: 60%;
+  height: 20px;
+  border: 2px solid #dedede;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-size: 10px;
+  text-align: left;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: white;
+  margin-left: 35%;
+
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
+.icons img{
+   border-radius: 50%;
+   margin-left: 10px;
+}
+.Activities_subicon{
+position: relative;
+display: inline-block;
+float: left;
+width:20%;
+}
+.Activities_subicon img{
+  width:40px;
+  margin-top: 10px;
+}
+.Activities_txt{
+  position: relative;
+  display: inline-block;
+  font-size:10px;
+  width: 80%;
+}
+.Activities_txt h2{
+  margin-left: 15px;
+  text-align: left;
+}
+.Activities_txt p{
+  text-align: left;
+    margin-left: 15px;
+}
+.span_color{
+  color: #40bad5;
+}
+@media (max-width:800px) {
+.grid-container_two ,.grid-container_three {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 10px;
+  padding: 10px;
+  margin: 15px;
+  }
+  .grid-container_one {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 15px;
+    }
+    .calendar{
+          transform: rotate(-90deg);
+          width: 250px;
+          grid-gap: 3px;
+          margin-bottom: 270px;
+          margin-top: 80px;
+    }
+    .calendar .date div{
+      display: flex;
+      height:10px;
+      font-size:10px;
+      color: #262626;
+    }
+    .events_one p{
+      font-size: 7px;
+    }
+    .events_one{
+    height: 62px;
+    margin-top: 5px;
+    }
+    .oct{
+      font-size:0px;
+    }
+.image img{
+width: 30px;
+}
+.sales, .sales_one{
+  font-size: 13px;
+  width: 20%;
+  margin-left: 15px;
+}
+.sales_one{
+  margin-bottom: 50px;
+  margin-left: 100px;
+  font-size: 10px;
+}
+
+}
